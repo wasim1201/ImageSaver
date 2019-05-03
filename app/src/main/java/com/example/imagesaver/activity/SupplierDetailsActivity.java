@@ -540,7 +540,7 @@ public class SupplierDetailsActivity extends AppCompatActivity implements Catego
         } else if (type == Constants.TYPE_FOLDER) {
             return name + "_" + supplierName + "_" + category;
         }
-        return "1201";
+        return "";
     }
 
 }
