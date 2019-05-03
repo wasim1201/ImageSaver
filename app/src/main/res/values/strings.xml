@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Trade Show Images</string>
+
+    <string name="hint_enter_your">Enter Your Name</string>
+    <string name="hint_enter_location">Enter Location</string>
+    <string name="hint_supplier_name">Enter Supplier Name</string>
+    <string name="next">Next</string>
+    <string name="select_supplier_name">Select Supplier Name</string>
+    <string name="select_category_name">Select Category Name</string>
+    <string name="select_family_name">Select Family Name</string>
+    <string name="select_sub_family_name">Select Sub-Family Name</string>
+    <string name="splash_welcome">Welcome to Trade Show</string>
+
+
+    <string-array name="planet">
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+
+
+    </string-array>
+
+</resources>

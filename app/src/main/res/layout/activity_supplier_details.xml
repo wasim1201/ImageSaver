@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
+            tools:context=".activity.SupplierDetailsActivity">
+
+
+
+            <TextView
+                android:id="@+id/shipping_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Shipping Method"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_shipping_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shipping_method"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/lc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LC"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/on_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On Site"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/shipping_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_shipping_method"
+                android:layout_marginLeft="20dp"
+                android:text="Shipping Type"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shipping_type"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <CheckBox
+                    android:id="@+id/theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theme"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/customization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customization"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/three_six_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="365"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sale"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/category"
+                layout="@layout/button_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_checkbox"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="Select Category" />
+
+            <include
+                android:id="@+id/family"
+                layout="@layout/button_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="Select Family" />
+
+            <include
+                android:id="@+id/sub_family"
+                layout="@layout/button_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/family"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="Select Sub-Family" />
+
+            <ImageView
+                android:id="@+id/take_photo"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/sub_family"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_camera"
+                android:text="Take Photo" />
+
+
+            <ImageView
+                android:id="@+id/take_video"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/sub_family"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_video"
+                android:text="Take Photo" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
