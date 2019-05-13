@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         layout="@layout/toolbar"/>
 
-    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="70dp"
@@ -50,12 +50,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
                 android:layout_marginRight="7dp"
-                android:imeOptions="actionDone"
+                android:imeOptions="actionGo"
                 android:hint="@string/hint_enter_location"
                 android:inputType="textCapWords"
                 android:textSize="20sp" />
 
         </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/termsCondition"
+            android:text="Terms and Conditions"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_alignBaseline="@+id/submit"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:padding="10dp"
+            android:layout_below="@id/layout_enter_location"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/submit"
